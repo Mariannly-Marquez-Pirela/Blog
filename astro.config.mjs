@@ -161,6 +161,7 @@ export default defineConfig({
 		],
 	},
 	vite: {
+		assetsInclude: ['**/*.bib'],
 		build: {
 			rollupOptions: {
 				onwarn(warning, warn) {

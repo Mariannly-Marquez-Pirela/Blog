@@ -1,12 +1,12 @@
 ---
-title: Quantum Error Correction
-published: 2026-08-30
-description: ""
+title: Is The Universe A Quantum Computer?
+published: 2026-08-14
+description: "A brief History of Holographic Quantum Error Correction"
 image: ""
-tags: ["Fuwari", "Blogging", "Customization"]
-category: Guides
-draft: false
+tags: ["Quantum Computing", "Error Correction", "Holography"]
+category: Physics
 bibliography: QuantumErrorCorrection/References.bib
+draft: false
 ---
 
 
@@ -21,7 +21,8 @@ affiliation{School of Physical Sciences and Nanotechnology, Yachay Tech Universi
 
 
 
-Quantum computing emerged as a revolutionary paradigm in the nineteen-eighties. In a 1985 paper, David Deutsch [@Deutsch_1985] proposed a universal computer based on quantum physics. It would have calculating powers that a classical computer, even in theory, could not simulate. In an interview [@nast_2011], Deutsch later recalled that the idea for his paper came from a conversation with the physicist Charles Bennet, of IBM, about computational complexity, i.e., the difficulty of a computational task. A comment by Bennett struck Deutsch deeply: "The fundamental computer is physics itself." If computational complexity is a statement about the physical laws, then it matters which laws we use. Classical physics, he realized, was an approximation. The true universal computer should run on the actual rules of the universe, quantum rules. 
+
+Quantum computing emerged as a revolutionary paradigm in the nineteen-eighties. In a 1985 paper, David Deutsch [@Deutsch_1985] proposed a universal computer based on quantum physics. It would have calculating powers that a classical computer, even in theory, could not simulate. In an interview [@nast_2011], Deutsch later recalled that the idea for his paper came from a conversation with the physicist Charles Bennet, of IBM, about computational complexity, i.e., the difficulty of a computational task. A comment by Bennett struck Deutsch deeply: "The fundamental computer is physics itself." If computational complexity is a statement about the physical laws, then it matters which laws we use. Classical physics, he realized, was an approximation. The true universal computer should run on the actual rules of the universe: quantum rules. 
 
 Deutch's work was foundational for later progress in quantum computing. In 1994, Peter Shor [@Shor_1996] developed an algorithm for prime factorization, a problem that was intractable on a classical computer. This method promised exponential speedup over classical methods. He also demonstrated the algorithm's potential to break widely used cryptographic systems. However, Shor ended his paper by stating that building quantum computers faces significant challenges. This remains evident almost thirty years later, as the best implementations of his algorithm have only factored small two-digit composite numbers [@Mounica_2021, Skosana_2021, DeCusatis_2021].  
 
