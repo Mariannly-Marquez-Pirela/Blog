@@ -9,24 +9,16 @@ bibliography: QuantumErrorCorrection/References.bib
 draft: false
 ---
 
-
-
-author{Mariannly Marquez}
-email{mariannly.marquez@yachaytech.edu.ec}
-affiliation{School of Physical Sciences and Nanotechnology, Yachay Tech University, 100119-Urcuqui, Ecuador}
-
-author{Duncan J. Mowbray}
-email{dmowbray@yachaytech.edu.ec}
-affiliation{School of Physical Sciences and Nanotechnology, Yachay Tech University, 100119-Urcuqui, Ecuador}
-
-
-
-
 Quantum computing emerged as a revolutionary paradigm in the nineteen-eighties. In a 1985 paper, David Deutsch [@Deutsch_1985] proposed a universal computer based on quantum physics. It would have calculating powers that a classical computer, even in theory, could not simulate. In an interview [@nast_2011], Deutsch later recalled that the idea for his paper came from a conversation with the physicist Charles Bennet, of IBM, about computational complexity, i.e., the difficulty of a computational task. A comment by Bennett struck Deutsch deeply: "The fundamental computer is physics itself." If computational complexity is a statement about the physical laws, then it matters which laws we use. Classical physics, he realized, was an approximation. The true universal computer should run on the actual rules of the universe: quantum rules. 
 
 Deutch's work was foundational for later progress in quantum computing. In 1994, Peter Shor [@Shor_1996] developed an algorithm for prime factorization, a problem that was intractable on a classical computer. This method promised exponential speedup over classical methods. He also demonstrated the algorithm's potential to break widely used cryptographic systems. However, Shor ended his paper by stating that building quantum computers faces significant challenges. This remains evident almost thirty years later, as the best implementations of his algorithm have only factored small two-digit composite numbers [@Mounica_2021, Skosana_2021, DeCusatis_2021].  
 
-Quantum systems are fragile. They interact with their environment in unwanted ways which is often generalized as decoherence [@Nielsen_2011]. These interactions cause errors that threaten computation. The most studied errors are bit-flip and phase-flip errors but there are also depolarizing, damping, and even random errors.  Another source of errors is that quantum operations can only be implemented with limited accuracy.  These complications, among others, have significantly limited the physical realization of quantum computers. 
+<figure>
+    <img src="./Figures/shor_code_page-0001.jpg" alt="Shor Code" />
+	<figcaption>Quantum circuit of (A) repetition code for correcting bit-flip errors, (B) repetition code for correcting phase-flip errors, and (C) Shor's code.</figcaption>
+</figure>
+
+Quantum systems are fragile. They interact with their environment in unwanted ways which is often generalized as decoherence [@Nielsen_2011]. These interactions cause errors that threaten computation. The most studied errors are bit-flip and phase-flip errors, but there are also depolarizing, damping, and even random errors.  Another source of errors is that quantum operations can only be implemented with limited accuracy.  These complications, among others, have significantly limited the physical realization of quantum computers. 
 
 The following years brought some hope. Shor [@Shor_1995] himself proved quantum error correction was possible. Much like classical error correction codes protect data during transmission, quantum error correction codes (QECCs) shield quantum information. They encode logical qubits across several physical qubits. This redundancy allows errors to be detected and corrected [@Calderbank_1996]. By using ancillary qubits and measuring them, we can recover the original quantum state while preserving the important properties of superposition [@Nielsen_2011]. 
 
@@ -45,6 +37,12 @@ The HaPPY code, introduced in 2015, made holographic quantum error-correcting co
 The development of holographic quantum error correction (HQEC) opened an unexpected path forward in different fields.  It offers new insights into the black hole information paradox. By modeling black hole interiors as encoded subspaces, HQEC frameworks suggest that information falling into a black hole is not destroyed but instead gets delocalized across the boundary, offering a potential route to information recovery through Hawking radiation [@Kibe_2021, Interior_2018]. 
 
 These discoveries echo Deutsch and Bennett's early intuition: that physics itself is the ultimate computer. HQEC suggests that the fabric of reality may not just be describable by computation; it may be computation, encoded in the deepest structure of the cosmos. 
+
+
+> Have any comments? Contact me at mariannly.marquez@yachaytech.edu.ec
+
+This was written originally within a final project titled "A Mini-Review on Quantum Error Correction in Holography", summited for a Quantum Computing course during the 2025 Spring Semester. This course was taught by PhD. Duncan J. Mowbray from the School of Physical Sciences and Nanotechnology, Yachay Tech University, 100119-Urcuqui, Ecuador. 
+
 
 ## References
 
