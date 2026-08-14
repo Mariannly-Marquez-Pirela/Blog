@@ -6,6 +6,8 @@ image: ""
 tags: ["Quantum Computing", "Error Correction", "Holography"]
 category: Physics
 bibliography: QuantumErrorCorrection/References.bib
+csl: "chicago"
+linkCitations: True
 draft: false
 ---
 
@@ -13,10 +15,10 @@ Quantum computing emerged as a revolutionary paradigm in the nineteen-eighties. 
 
 Deutch's work was foundational for later progress in quantum computing. In 1994, Peter Shor [@Shor_1996] developed an algorithm for prime factorization, a problem that was intractable on a classical computer. This method promised exponential speedup over classical methods. He also demonstrated the algorithm's potential to break widely used cryptographic systems. However, Shor ended his paper by stating that building quantum computers faces significant challenges. This remains evident almost thirty years later, as the best implementations of his algorithm have only factored small two-digit composite numbers [@Mounica_2021, Skosana_2021, DeCusatis_2021].  
 
-<figure>
-    <img src="./Figures/shor_code_page-0001.jpg" alt="Shor Code" />
-	<figcaption>Quantum circuit of (A) repetition code for correcting bit-flip errors, (B) repetition code for correcting phase-flip errors, and (C) Shor's code.</figcaption>
-</figure>
+![Shor Code](./Figures/shor_code_page-0001.jpg)
+
+<p class="text-sm text-gray-500 mt-2 dark:text-gray-400">Quantum circuit of (A) repetition code for correcting bit-flip errors, (B) repetition code for correcting phase-flip errors, and (C) Shor's code. In the first one, the logical states encode as \( |0_L\rangle \rightarrow |000\rangle \) and \( |1_L\rangle \rightarrow |111\rangle \). Syndrome measurement compares neighboring qubits through parity checks, revealing error locations without disturbing the logical information. Recovery operations apply corrective bit-flips based on syndrome outcomes, restoring the original logical state. The three-qubit phase-flip code protects against phase errors using superposition states instead. Encoding transforms \( |0_L\rangle \rightarrow |+++\rangle \) and \( |1_L\rangle \rightarrow |---\rangle \), where \( |\pm\rangle \) denotes the X-basis states. Syndrome measurements detect phase-flip errors through parity checks in the X-basis. Hadamard transformations reveal the equivalence between bit-flip and phase-flip error correction, as \( H \sigma_z H^\dagger = \sigma_x \). Lastly, the Shor code combines bit-flip and phase-flip protection using nine physical qubits. This concatenated construction first applies the bit-flip code, then protects each resulting qubit with the phase-flip code. The Shor code corrects arbitrary single-qubit errors, representing the first universal quantum error correction protocol. Generalizations to larger codes enable correction of multiple errors and higher error rates [@Nielsen_2011] [@khalid_2023], [@Shor_1995].</p>
+
 
 Quantum systems are fragile. They interact with their environment in unwanted ways which is often generalized as decoherence [@Nielsen_2011]. These interactions cause errors that threaten computation. The most studied errors are bit-flip and phase-flip errors, but there are also depolarizing, damping, and even random errors.  Another source of errors is that quantum operations can only be implemented with limited accuracy.  These complications, among others, have significantly limited the physical realization of quantum computers. 
 
