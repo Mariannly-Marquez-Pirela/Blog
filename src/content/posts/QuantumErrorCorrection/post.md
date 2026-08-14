@@ -7,7 +7,7 @@ tags: ["Quantum Computing", "Error Correction", "Holography"]
 category: Physics
 bibliography: QuantumErrorCorrection/References.bib
 csl: "chicago"
-linkCitations: True
+linkCitations: True #not working!
 draft: false
 ---
 
